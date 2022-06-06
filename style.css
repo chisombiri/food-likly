@@ -15,6 +15,106 @@ html{
     font-size: 62.5%;
 }
 
+/* Navbar styling */
+.navbar{
+    position: fixed;
+    top: -14rem;
+    z-index: 5;
+    width: 100%;
+    height: 12rem;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.2rem 0.2rem 0.2rem #000;
+    transition: top 0.5s;
+}
+
+.navbar.change{
+    top: 0;
+    transition: top 0.5s 0.2s;
+}
+
+.nav-link{
+    color: #aaa;
+    margin: 0 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: color 0.4s;
+}
+
+.change .nav-link{
+    opacity: 1;
+}
+
+.change .nav-link:nth-child(1){
+    transition: opacity 0.4s 0.5s, color 0.4s;
+}
+
+.change .nav-link:nth-child(2){
+    transition: opacity 0.4s 0.6s, color 0.4s;
+}
+
+.change .nav-link:nth-child(3){
+    transition: opacity 0.4s 0.7s, color 0.4s;
+}
+
+.change .nav-link:nth-child(4){
+    transition: opacity 0.4s 0.8s, color 0.4s;
+}
+
+.change .nav-link:nth-child(5){
+    transition: opacity 0.4s 0.9s, color 0.4s;
+}
+
+.nav-link:hover{
+    color: #ffffff;
+}
+
+.nav-link i{
+    font-size: 4rem;
+}
+
+.nav-link span{
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.menu{
+    cursor: pointer;
+    position: fixed;
+    top: 1rem;
+    left: 5rem;
+    width: 4rem;
+    height: 6rem;
+    z-index: 5;
+    background-color: #000;
+    border-radius: 30rem 30rem 15rem 15rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem #000, -0.1rem -0.1rem 0.1rem #000;
+    transition: top 0.5s 0.2s;
+}
+
+.menu::before{
+    content: "";
+    width: 0.3rem;
+    height: 15rem;
+    background-color: #000;
+    position: absolute;
+    top: -15rem;
+    box-shadow: 0.1rem 0 0.1rem #000;
+    left: calc(50% - 0.15rem);
+}
+
+.menu.change{
+    top: 14rem;
+    transition: top 0.5s;
+}
+
 /* First section styling */
 .section-1{
     width: 100%;
