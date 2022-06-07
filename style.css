@@ -97,6 +97,7 @@ html{
     border-radius: 30rem 30rem 15rem 15rem;
     box-shadow: 0.1rem 0.1rem 0.1rem #000, -0.1rem -0.1rem 0.1rem #000;
     transition: top 0.5s 0.2s;
+    animation: menu-shake 0.2s ease-in-out 1s 8;
 }
 
 .menu::before{
@@ -421,6 +422,25 @@ h2.section-heading{
     bottom: 2rem;
     font-size: 1.6rem;
     text-align: center;
+}
+
+/* animation for menu icon */
+
+@keyframes menu-shake {
+    0%{
+        transform: rotateZ(0deg);
+        transform-origin: top;
+    }
+
+    50%{
+        transform: rotateZ(20deg);
+        transform-origin: top;
+    }
+
+    100%{
+        transform: rotateZ(-20deg);
+        transform-origin: top;
+    }
 }
 
 /* responsive code */
