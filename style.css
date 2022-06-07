@@ -261,6 +261,7 @@ h2.section-heading{
 .gallery-link{
     position: relative;
     margin: 4rem 1rem;
+    cursor: pointer;
 }
 
 .gallery-link::before{
@@ -331,7 +332,7 @@ h2.section-heading{
 .food-description{
     width: 90%;
     position: absolute;
-    bottom: 18vh;
+    bottom: 8vh;
     left: 2rem;
     font-size: 1.4rem;
     letter-spacing: 0.1rem;
@@ -452,6 +453,10 @@ h2.section-heading{
     .section-heading{
         font-size: 9rem;
         margin: 0 5rem;
+    }
+
+    .food-description{
+        bottom: 16vh;
     }
 
     h2.section-heading{
