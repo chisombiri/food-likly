@@ -380,6 +380,8 @@ h2.section-heading{
 .sign-up{
     display: flex;
     align-items: center;
+    position: relative;
+    left: 2.25rem;
 }
 
 .signup-form-input{
@@ -398,12 +400,11 @@ h2.section-heading{
 }
 
 .signup-form-btn{
-    position: relative;
     width: 4rem;
     height: 4rem;
     background-color: #333;
     color: #f47308;
-    left: -4.5rem;
+    transform: translate(-4.5rem);
     font-size: 1.8rem;
     cursor: pointer;
     border: none;
